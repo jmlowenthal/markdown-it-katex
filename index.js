@@ -92,6 +92,7 @@ function math_display(state, silent) {
 
 module.exports = function math_plugin(md, options) {
     options = options || {};
+	options.macros = options.macros || {};
 
     var katexInline = function(latex){
         options.displayMode = false;
